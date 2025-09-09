@@ -29,25 +29,41 @@ namespace SEMANA1_C_
         }
         static void ejer2()
         {
-            Console.Write("Ingrese numero x: ");
-            int x = int.Parse( Console.ReadLine() );
+            Console.WriteLine("\"choi\"");
 
-            Console.Write("Ingrese numero y: ");
-            int y = Convert.ToInt32( Console.ReadLine() );
-
-            double resu = x / y;
-
-            Console.WriteLine("Suma: " + (x+y));
-            Console.WriteLine("Resta: " + (x - y));
-            Console.WriteLine("Multiplicacion: " + (x * y));
-            Console.WriteLine("Division: " + resu);
+            ejer3();
         }
         static void ejer3()
         {
+            Console.Write("Ingrese numero x: ");
+            int x = int.Parse(Console.ReadLine());
 
+            Console.Write("Ingrese numero y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            double resu = x / y;
+
+            Console.WriteLine("Suma: " + (x + y));
+            Console.WriteLine("Resta: " + (x - y));
+            Console.WriteLine("Multiplicacion: " + (x * y));
+            Console.WriteLine("Division: " + resu);
+
+            ejer4();
         }
         static void ejer4()
         {
+            Console.Write("Ingrese un numero decimal: ");
+            double num = Convert.ToDouble(Console.ReadLine());  
+
+            double raiz2 = Math.Sqrt(num);
+            int redo = (int)Math.Round(num ,0);
+            double cubo = Math.Pow(num, 3);
+            double raiz3 = Math.Pow(num, 1 / 3d);
+
+            Console.WriteLine("Raiz 2: " + raiz2);
+            Console.WriteLine("Redondeando: " + redo);
+            Console.WriteLine("Al cubo " + cubo);
+            Console.WriteLine("Raiz 3: " + raiz3);
 
         }
         static void ejer5()
